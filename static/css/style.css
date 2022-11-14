@@ -9,10 +9,6 @@ body {
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
-}
-
 .thin {
     font-weight: 300;
 }
@@ -86,22 +82,22 @@ body {
     z-index: 100;
 }
 
-.post-link {
+.book-link {
     text-decoration: none;
     color: #445261;
 }
 
-.post-link:hover,
+.book-link:hover,
 .page-link {
     color: #E84610;
 }
 
-.post-title {
+.book-title {
     margin-top: 20%;
     margin-left: 5%;
 }
 
-.post-subtitle {
+.book-subtitle {
     margin-left: 5%;
     color: lightgray;
 }
