@@ -35,7 +35,7 @@ class Review(models.Model):
     email = models.EmailField()
     body = models.TextField()
     uploaded_on = models.DateTimeField(auto_now_add=True)
-    # approved = models.BooleanField(default=False)
+    approved = models.BooleanField(default=False)
 
     class Meta:
         ordering = ["uploaded_on"]
