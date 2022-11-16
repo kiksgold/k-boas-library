@@ -4,6 +4,7 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Updated"))
 
+
 class Book(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -11,7 +12,7 @@ class Book(models.Model):
         User, on_delete=models.CASCADE, related_name="library_books"
     )
     cover_image = CloudinaryField('image', default='placeholder')
-    excerpt = models.TextField(blank=True) 
+    excerpt = models.TextField(blank=True)
     uploaded_on = models.DateTimeField(auto_now_add=True)
     returned_on = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
